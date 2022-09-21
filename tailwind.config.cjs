@@ -9,9 +9,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', ...defaultTheme.fontFamily.sans]
+        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        display: ['"Paytone One"', ...defaultTheme.fontFamily.sans]
       }
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
