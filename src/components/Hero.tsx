@@ -24,7 +24,9 @@ export default function Hero() {
   return (
     <section onClick={onClick} className="h-screen flex justify-center items-center cursor-pointer dark:text-white">
       <animated.div style={styles}>
-        <AppearanceToggle />
+        <div className='fixed -top-16 -right-16'>
+          <AppearanceToggle />
+        </div>
         <h1 className="p-8 dark:text-white font-display text-4xl md:text-6xl">
           Henry Dang
         </h1>

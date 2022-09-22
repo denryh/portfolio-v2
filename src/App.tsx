@@ -1,7 +1,8 @@
+import { Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero';
 import About from './components/About';
 import Main from './components/Main';
-import { Routes, Route } from 'react-router-dom'
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <Route path='/' element={<Hero />} />
         <Route path='/about' element={<About />} />
         <Route path='/main' element={<Main />} />
+        <Route path='/work' element={<Main />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>
   );
