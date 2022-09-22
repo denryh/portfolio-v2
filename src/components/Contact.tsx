@@ -32,6 +32,12 @@ export default function Contact() {
           </div>
           <button className='mt-2 w-20 p-2 bg-black text-white dark:bg-white dark:text-black rounded'>Send</button>
         </div>
+        <div className='fixed bottom-8 text-center'>Or call me maybe: <span onClick={() => {
+          if (!navigator.clipboard) alert("Copy functionality not supported.");
+          navigator.clipboard.writeText('+84901208303');
+          alert("Copied number.")
+        }
+        } className='font-light underline cursor-pointer'>+84 901 208 303</span></div>
       </animated.div>
     </section>
   )

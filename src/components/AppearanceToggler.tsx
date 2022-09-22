@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import sun from '../assets/sun.svg'
-import moon from '../assets/moon.svg'
+import sun from '../assets/icons/sun.svg'
+import moon from '../assets/icons/moon.svg'
 
 
 export default function AppearanceToggle() {
