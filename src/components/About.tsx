@@ -40,13 +40,13 @@ export default function About() {
         className="h-full flex flex-col justify-center items-center gap-16"
       >
         <div className="px-8">
-          <h2 className="font-display text-4xl md:text-6xl">About me</h2>
-          <p className="mt-8 md:text-2xl">
-            Hi, I'm an enthusiastic web developer. I can sit on both end of an
+          <h2 className="font-display text-2xl md:text-4xl">About me</h2>
+          <p className="mt-8 md:text-xl">
+            Hi, I'm an enthusiastic web developer. I can sit on both ends of an
             application, and my real name is{" "}
             <span className="font-bold">Dat.</span>
           </p>
-          <p className="mt-2 font-light text-sm md:text-xl">
+          <p className="mt-2 font-light text-sm md:text-base">
             I'm currently living in the South East Asia on a beautiful country
             name Vietnam. 🇻🇳
           </p>
