@@ -31,30 +31,32 @@ export default function About() {
   };
 
   return (
-    <section
-      onClick={forward}
-      className="h-screen relative dark:text-white cursor-pointer"
-    >
+    <section className="h-screen relative dark:text-white cursor-pointer">
       <animated.div style={navStyles}>
         <Nav path="/" toggleFx={set} />
       </animated.div>
-      <animated.div style={styles} className="h-full grid place-items-center">
+      <animated.div
+        style={styles}
+        className="h-full flex flex-col justify-center items-center gap-16"
+      >
         <div className="px-8">
           <h2 className="font-display text-4xl md:text-6xl">About me</h2>
-          <p className="mt-8 font-ligh md:text-xl">
-            Hi, I'm an enthusiastic web developer, and my real name is{" "}
-            <span className="font-bold">Thanh Dat.</span>
+          <p className="mt-8 md:text-2xl">
+            Hi, I'm an enthusiastic web developer. I can sit on both end of an
+            application, and my real name is{" "}
+            <span className="font-bold">Dat.</span>
           </p>
-          <p className="mt-2 md:text-xl">
+          <p className="mt-2 font-light text-sm md:text-xl">
             I'm currently living in the South East Asia on a beautiful country
             name Vietnam. 🇻🇳
           </p>
-          <p className="mt-8 text-sm text-zinc-500 md:text-base md:w-3/4 font-light">
-            *Tiny fact: my major was English Business but after realizing my
-            passion and strength, I decided to teach myself all about web
-            development.
-          </p>
         </div>
+        <i onClick={forward}>
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/000000/right--v1.png"
+            className="hover:scale-125 transition duration-500 cursor-pointer filter-none dark:filter invert-[93%] sepia-0 saturate-[7465%] hue-rotate-[57deg] brightness-[107%] contrast-[110%]"
+          />
+        </i>
       </animated.div>
     </section>
   );
