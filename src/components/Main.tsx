@@ -39,8 +39,8 @@ export default function Main() {
 
   return (
     <main className="h-screen dark:text-white">
+      <Nav path="/about" toggleFx={set} />
       <animated.div style={mainStyles} className="relative w-full h-full">
-        <Nav path="/about" toggleFx={set} />
         <div className='grid place-items-center h-full'>
           <ul className='px-8 w-full h-full flex flex-col justify-center items-center text-2xl gap-4 backdrop-blur-md bg-white/80 dark:bg-black/40 z-10 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-none md:z-0'>
             <li
