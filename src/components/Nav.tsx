@@ -26,6 +26,6 @@ export default function Nav({ path, toggleFx, main }: { path: string, toggleFx: 
     <div className="relative -right-10">
       <AppearanceToggler />
     </div>
-    <span style={{ width: `${progress}%` }} className="h-1 w-full bg-black absolute top-10 left-0 dark:bg-white"></span>
+    <span style={{ width: `${progress}%` }} className="h-1 w-full bg-black absolute top-10 left-0 dark:bg-white md:top-8"></span>
   </div>
 }
