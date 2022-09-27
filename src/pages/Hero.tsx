@@ -1,7 +1,9 @@
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AppearanceToggle from "./AppearanceToggler";
+import AppearanceToggle from "../components/AppearanceToggler";
+
+import { TRANSITION_TIME } from "../util/config";
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -10,7 +12,7 @@ export default function Hero() {
     from: { opacity: 0 },
     to: { opacity: show ? 1 : 0 },
     config: {
-      duration: 1000,
+      duration: TRANSITION_TIME,
     },
   });
 
@@ -18,7 +20,7 @@ export default function Hero() {
     set(false);
     setTimeout(() => {
       navigate("/about");
-    }, 1000);
+    }, TRANSITION_TIME);
   };
 
   return (

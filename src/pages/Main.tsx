@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useSpring, animated, config } from "react-spring";
-import Nav from "./Nav";
+
+import { TRANSITION_TIME } from "../util/config";
+
+import Nav from "../components/Nav";
 
 import fbIcon from "../assets/icons/facebook.svg";
 import insIcon from "../assets/icons/instagram.svg";
@@ -17,7 +20,7 @@ export default function Main() {
   const mainStyles = useSpring({
     from: { opacity: 0 },
     to: { opacity: show ? 1 : 0 },
-    config: { duration: 1000 },
+    config: { duration: TRANSITION_TIME },
   });
 
   const modalStyles = useSpring({
@@ -32,7 +35,7 @@ export default function Main() {
     set(!show);
     setTimeout(() => {
       navigate(path);
-    }, 1000);
+    }, TRANSITION_TIME);
   };
 
   const toggleModal = () => {
@@ -41,7 +44,7 @@ export default function Main() {
 
   return (
     <main className="h-screen dark:text-white flex flex-col items-center">
-      <Nav path="/about" toggleFx={set} />
+      <Nav path="/about" toggleFx={set} main={true} />
       <animated.div
         style={modalStyles}
         className="px-4 w-10/12 relative flex flex-col border-2 border-black rounded-sm bg-white/90 dark:border-white dark:bg-transparent dark:text-white mt-24 z-40 max-w-xl"
@@ -70,7 +73,7 @@ export default function Main() {
       </animated.div>
       <animated.div style={mainStyles} className="absolute w-full h-full">
         <div className="grid place-items-center h-full">
-          <ul className="px-8 w-full h-full flex flex-col justify-center items-center text-2xl gap-4 backdrop-blur-md bg-white/80 dark:bg-black/40 z-10 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-none md:z-0">
+          <ul className="px-8 w-full h-full flex flex-col justify-center items-center text-2xl gap-8 backdrop-blur-md bg-white/80 dark:bg-black/40 z-10 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-none md:z-0">
             <li
               onClick={toggleModal}
               className="w-fit p-4 rounded-md cursor-pointer relative before:h-1 before:w-0 before:bg-black before:absolute before:bottom-2 before:left-1/2 before:transition-all before:duration-300 hover:before:w-full hover:before:left-0 dark:before:bg-white"

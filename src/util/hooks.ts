@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useScrollProgress(): number {
+export function useScrollProgress(): number {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
