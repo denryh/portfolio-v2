@@ -43,7 +43,7 @@ export default function Main() {
   };
 
   return (
-    <main className="h-screen dark:text-white flex flex-col items-center">
+    <main className="min-h-screen dark:text-white flex flex-col items-center">
       <Nav path="/about" toggleFx={set} main={true} />
       <animated.div
         style={modalStyles}
@@ -72,8 +72,11 @@ export default function Main() {
         </div>
       </animated.div>
       <animated.div style={mainStyles} className="absolute w-full h-full">
-        <div className="grid place-items-center h-full">
-          <ul className="px-8 w-full h-full flex flex-col justify-center items-center text-2xl gap-8 backdrop-blur-md bg-white/80 dark:bg-black/40 z-10 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-none md:z-0">
+        <div className="flex h-full max-w-5xl mx-auto">
+          <div className="bg-[url(/src/assets/main.jpg)] bg-center bg-cover fixed top-0 bottom-0 left-0 right-0 z-0 md:static md:flex-1 md:bg-none md:flex md:justify-center md:items-center md:pl-32">
+            <div className="bg-[url(/src/assets/main.jpg)] bg-center bg-cover w-[300px] h-[600px] rounded hidden md:block"></div>
+          </div>
+          <ul className="px-8 w-full h-full flex flex-col justify-center items-center text-2xl gap-8 backdrop-blur-md bg-white/80 dark:bg-black/40 z-10 md:dark:bg-transparent md:bg-transparent md:backdrop-blur-none md:z-0 md:flex-1 md:gap-16 md:items-start">
             <li
               onClick={toggleModal}
               className="w-fit p-4 rounded-md cursor-pointer relative before:h-1 before:w-0 before:bg-black before:absolute before:bottom-2 before:left-1/2 before:transition-all before:duration-300 hover:before:w-full hover:before:left-0 dark:before:bg-white"
@@ -93,8 +96,8 @@ export default function Main() {
               Contact
             </li>
           </ul>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 before:absolute before:h-[1px] before:w-12 before:bg-black before:-left-16 before:top-1/2 before:-translate-y-1/2 after:absolute after:h-[1px] after:w-12 after:bg-black after:-right-16 after:top-1/2 after:-translate-y-1/2 z-10 md:z-0 dark:before:bg-white dark:after:bg-white">
-            <ul className="flex gap-4">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 before:absolute before:h-[1px] before:w-12 before:bg-black before:-left-16 before:top-1/2 before:-translate-y-1/2 after:absolute after:h-[1px] after:w-12 after:bg-black after:-right-16 after:top-1/2 after:-translate-y-1/2 z-10 md:z-0 dark:before:bg-white dark:after:bg-white md:left-10 md:bottom-1/2 md:translate-y-1/2 md:before:rotate-90 md:before:-top-10 md:before:-left-2 md:after:rotate-90 md:after:top-64 md:after:-left-2">
+            <ul className="flex gap-4 md:flex-col">
               <li>
                 <a href="https://facebook.com/thdatdg" target="_blank">
                   <img
@@ -146,10 +149,6 @@ export default function Main() {
             </ul>
           </div>
         </div>
-        <div className="bg-[url(/src/assets/main.jpg)] bg-center bg-cover fixed top-0 bottom-0 left-0 right-0 z-0 md:w-[10vw] md:h-[20vh] md:top-[15%] md:right-[15%] md:left-auto md:bottom-auto md:rotate-3 hover:scale-125 transition duration-500 hover:-rotate-3"></div>
-        <div className="bg-[url(/src/assets/sub1.jpg)] bg-center bg-cover fixed md:w-[10vw] md:h-[20vh] md:top-[15%] md:right-auto md:left-[15%] md:bottom-auto -rotate-12 hover:scale-125 transition duration-500 hover:rotate-3"></div>
-        <div className="bg-[url(/src/assets/sub2.jpg)] bg-center bg-cover fixed md:w-[10vw] md:h-[20vh] md:top-auto md:right-auto md:left-[15%] md:bottom-[15%] rotate-45 hover:scale-125 transition duration-500 hover:-rotate-3"></div>
-        <div className="bg-[url(/src/assets/sub3.jpg)] bg-center bg-cover fixed md:w-[10vw] md:h-[20vh] md:top-auto md:right-[15%] md:left-auto md:bottom-[15%] -rotate-[30deg] hover:scale-125 transition duration-500 hover:rotate-3"></div>
       </animated.div>
     </main>
   );

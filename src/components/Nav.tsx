@@ -22,7 +22,7 @@ export default function Nav({ path, toggleFx, main }: { path: string, toggleFx: 
     <div onClick={back} className="cursor-pointer w-20 h-20 rounded-full relative -left-10">
       <span className="absolute top-[46px] left-14 md:left-16 text-2xl md:text-4xl md:top-10">{'<'}</span>
     </div>
-    <span className="font-display absolute top-12 left-1/2 -translate-x-1/2">denryh</span>
+    <span className="absolute top-12 left-1/2 -translate-x-1/2 font-bold">denryh</span>
     <div className="relative -right-10">
       <AppearanceToggler />
     </div>

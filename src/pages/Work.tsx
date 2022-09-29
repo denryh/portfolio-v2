@@ -18,23 +18,31 @@ export default function Work() {
   });
 
   return (
-    <section className="pt-24 min-h-screen dark:text-white">
+    <section className="pt-[15vh] min-h-screen dark:text-white">
       <Nav path="/main" toggleFx={set} />
       <animated.div
         style={mainStyles}
         className="h-full flex flex-col items-center"
       >
         <h2 className="mb-20 font-display text-4xl">FEATURED WORKS</h2>
-        <div className="max-w-7xl p-4 flex flex-col gap-4 md:grid grid-cols-2 md:gap-16">
-          <article className="relative group overflow-hidden">
+        <div className="max-w-7xl p-4 flex flex-col gap-4 md:grid grid-cols-2 md:gap-8">
+          <article className="relative group overflow-hidden rounded-lg">
             <div className="w-full h-full">
-              <img src={jennair} alt="jennair website" className="min-h-[200px] group-hover:scale-110 transition-all duration-500 md:h-full"></img>
+              <img
+                src={jennair}
+                alt="jennair website"
+                className="min-h-[200px] group-hover:scale-110 transition-all duration-500 md:h-full"
+              ></img>
             </div>
             <div className="p-4 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-500">
               <div className="flex flex-col items-center text-center">
-                <h3 className="my-4 font-display text-xl md:text-4xl">Jennair</h3>
+                <h3 className="my-4 font-display text-xl md:text-4xl">
+                  Jennair
+                </h3>
                 <p className="font-light">
-                  Participating in creating modern and elegant UI using <span className="font-bold text-[#BD9B60]">React</span> and <span className="font-bold text-[#BD9B60]">Chakra</span>
+                  Participating in creating modern and elegant UI using{" "}
+                  <span className="font-bold text-[#BD9B60]">React</span> and{" "}
+                  <span className="font-bold text-[#BD9B60]">Chakra</span>
                 </p>
               </div>
               <a
@@ -46,15 +54,23 @@ export default function Work() {
               </a>
             </div>
           </article>
-          <article className="relative group overflow-hidden">
+          <article className="relative group overflow-hidden rounded-lg">
             <div>
-              <img src={spectrum} alt="spectrum website" className="min-h-[200px] group-hover:scale-110 transition-all duration-500"></img>
+              <img
+                src={spectrum}
+                alt="spectrum website"
+                className="min-h-[200px] group-hover:scale-110 transition-all duration-500"
+              ></img>
             </div>
             <div className="p-4 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-full bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-all duration-500">
               <div className="flex flex-col items-center text-center">
-                <h3 className="my-4 font-display text-xl md:text-4xl">Spectrum</h3>
+                <h3 className="my-4 font-display text-xl md:text-4xl">
+                  Spectrum
+                </h3>
                 <p className="font-light">
-                  Coding UI for new feature using <span className="font-bold text-[#F66200]">React</span> and <span className="font-bold text-[#F66200]">SASS</span>
+                  Coding UI for new feature using{" "}
+                  <span className="font-bold text-[#F66200]">React</span> and{" "}
+                  <span className="font-bold text-[#F66200]">SASS</span>
                 </p>
               </div>
               <a
@@ -67,6 +83,7 @@ export default function Work() {
             </div>
           </article>
         </div>
+        <p className="mt-16 text-center text-xl">More is comming soon...</p>
       </animated.div>
     </section>
   );

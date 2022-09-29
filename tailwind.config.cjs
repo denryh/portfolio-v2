@@ -10,7 +10,17 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
-        display: ['"Paytone One"', ...defaultTheme.fontFamily.sans]
+        display: ['"Inter"', ...defaultTheme.fontFamily.sans]
+      },
+      keyframes: {
+        flash: {
+          '0%': {
+            transform: "translateX(0)"
+          },
+          '100%': {
+            left: "translateX(48px)"
+          }
+        }
       }
     },
   },
