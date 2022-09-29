@@ -32,19 +32,19 @@ export default function Hero() {
         <div className="fixed -top-10 -right-10">
           <AppearanceToggle />
         </div>
-        <div className="pt-16 px-8 max-w-5xl">
+        <div className="pt-16 px-8 max-w-5xl md:pt-0">
           <div className="flex flex-col items-center gap-8">
             <div className="w-full flex flex-col gap-8 items-center md:flex-row md:gap-16">
               <div>
-                <h1 className=" text-2xl md:text-4xl">Henry Dang</h1>
+                <h1 className=" text-2xl md:text-4xl text-center">Henry Dang</h1>
                 <p className="mt-4 font-light text-sm leading-6 md:text-base">
                   I'm an enthusiastic developer that can work on both ends of an
                   software application using my main programming language
                   JavaScript/Nodejs.
                 </p>
-                <p className="mt-2 font-thin text-sm text-zinc-500 md:text-base">
+                <p className="mt-2 font-extralight text-sm text-zinc-500 md:text-base">
                   Current location:{" "}
-                  <span className="font-normal text-black dark:text-white">
+                  <span className="font-light text-black dark:text-white">
                     South East Asia
                   </span>{" "}
                   on a beautiful country name{" "}

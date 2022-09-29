@@ -26,7 +26,7 @@ export default function Work() {
       >
         <h2 className="mb-20 font-display text-4xl">FEATURED WORKS</h2>
         <div className="max-w-7xl p-4 flex flex-col gap-4 md:grid grid-cols-2 md:gap-8">
-          <article className="relative group overflow-hidden rounded-lg">
+          <article className="relative group overflow-hidden rounded">
             <div className="w-full h-full">
               <img
                 src={jennair}
@@ -54,7 +54,7 @@ export default function Work() {
               </a>
             </div>
           </article>
-          <article className="relative group overflow-hidden rounded-lg">
+          <article className="relative group overflow-hidden rounded">
             <div>
               <img
                 src={spectrum}

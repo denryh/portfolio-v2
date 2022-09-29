@@ -20,10 +20,10 @@ export default function Contact() {
       <Nav path="/main" toggleFx={set} />
       <animated.div
         style={styles}
-        className="w-full h-full flex flex-col justify-between items-center px-4"
+        className="px-8 w-full h-full flex flex-col justify-between items-center"
       >
-        <div className="pt-24 md:pt-36 text-center">
-          <h2 className="my-4 text-2xl font-bold ">Leave a message</h2>
+        <div className="pt-24 md:pt-0 text-center">
+          <h2 className="my-4 text-2xl font-bold md:pt-32">Leave a message</h2>
           <p>Let's get in touch and build some stuff 🤘</p>
         </div>
         <div className="flex flex-col gap-4 w-full md:w-1/3">

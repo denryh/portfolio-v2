@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useSpring, animated, config } from "react-spring";
 
-import { TRANSITION_TIME } from "../util/config";
+import { TRANSITION_TIME, RESUME_URL } from "../util/config";
 
 import Nav from "../components/Nav";
 
@@ -60,7 +60,7 @@ export default function Main() {
             Cancel
           </button>
           <a
-            href="https://drive.google.com/file/d/1n4ML11QCt39zejAehAloz1sT-vKEJ8JF/view"
+            href={RESUME_URL}
             target="_blank"
             onClick={() => {
               setModalOpen(false);
