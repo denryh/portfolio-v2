@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useSpring, animated, config } from "react-spring";
 
-import { TRANSITION_TIME, RESUME_URL } from "../util/config";
+import { TRANSITION_TIME, RESUME_URL_EN, RESUME_URL_VN } from "../util/config";
 
 import Nav from "../components/Nav";
 
@@ -39,8 +39,8 @@ export default function Main() {
   };
 
   const toggleModal = () => {
-    setModalOpen(!modalOpen);
-  };
+    setModalOpen(!modalOpen)
+  }
 
   return (
     <main className="min-h-screen dark:text-white flex flex-col items-center">
@@ -53,21 +53,21 @@ export default function Main() {
           Navigating to Google Drive for resume view...
         </p>
         <div className="flex gap-2 absolute bottom-4 right-8">
-          <button
-            onClick={toggleModal}
-            className="w-20 h-8 border-2 border-black rounded dark:border-white"
-          >
-            Cancel
-          </button>
           <a
-            href={RESUME_URL}
+            href={RESUME_URL_EN}
             target="_blank"
-            onClick={() => {
-              setModalOpen(false);
-            }}
-            className="w-20 h-8 bg-black text-white border-2 border-black rounded grid place-items-center dark:border-white dark:bg-white dark:text-black"
+            onClick={toggleModal}
+            className="w-28 h-10 border-2 grid place-items-center border-black rounded dark:border-white"
           >
-            OK
+            English
+          </a>
+          <a
+            href={RESUME_URL_VN}
+            target="_blank"
+            onClick={toggleModal}
+            className="w-28 h-10 bg-black text-white border-2 border-black rounded grid place-items-center dark:border-white dark:bg-white dark:text-black"
+          >
+            Vietnamese
           </a>
         </div>
       </animated.div>

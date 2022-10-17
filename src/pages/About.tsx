@@ -41,49 +41,52 @@ export default function About() {
         className="min-h-screen mx-auto px-8 max-w-5xl flex items-center justify-center"
       >
         <div className="pt-24 flex flex-col gap-8 items-center md:pt-0">
-          <h2 className="text-3xl">Abilities summary</h2>
-          <ul className="rounded p-8 flex flex-col gap-4 font-extralight text-zinc-600 bg-black/5 dark:text-zinc-400 dark:bg-black/40 text-justify">
+          <h2 className="text-3xl">Tech stacks</h2>
+          <ul className="rounded p-8 flex flex-col gap-2 font-extralight text-zinc-600 bg-black/5 dark:text-zinc-400 dark:bg-black/40 text-justify">
             <li className="md:text-lg">
-              On{" "}
-              <span className="font-normal text-black dark:text-white">
-                front-end
+              <span className="font-bold text-black dark:text-white">
+                Front:
               </span>
-              :<span className="font-normal text-sky-400"> React </span>is primary
-              followed by
+              <span className="font-normal text-sky-400"> React </span>is
+              primary followed by
               <span className="font-light text-black dark:text-gray-200">
                 {" "}
                 Redux, react-spring, Tailwindcss, Sass,...
               </span>
             </li>
             <li className="md:text-lg">
-              On{" "}
-              <span className="font-normal text-black dark:text-white">
-                back-end
+              <span className="font-bold text-black dark:text-white">
+                Back:
               </span>
-              :<span className="font-normal text-green-600"> Nodejs</span> with
+              <span className="font-normal text-green-600"> Nodejs</span> with
               <span className="font-light text-black dark:text-gray-200">
                 {" "}
                 Express, REST APIs, JWT auth, ORMs...
               </span>{" "}
               or implementing{" "}
-              <span className="text-pink-500 font-normal">GraphQL</span> APIs using{" "}
-              <span className="text-indigo-700 font-normal">Apollo</span> framework,
-              unit testing with{" "}
-              <span className="text-amber-800 font-normal">Jest</span> and E2E tests
-              with <span className="text-teal-500 font-normal">Cypress</span>
+              <span className="text-pink-500 font-normal">GraphQL</span> APIs
+              using <span className="text-indigo-700 font-normal">Apollo</span>{" "}
+              framework, unit testing with{" "}
+              <span className="text-amber-800 font-normal">Jest</span> and E2E
+              tests with{" "}
+              <span className="text-teal-500 font-normal">Cypress</span>
             </li>
             <li className="md:text-lg">
-              With{" "}
-              <span className="font-normal text-black dark:text-white">
-                databases
+              <span className="font-bold text-black dark:text-white">
+                Databases
               </span>
               : Relational and document such as
-              <span className="text-black dark:text-gray-200 font-light"> SQL, MongoDB</span>
+              <span className="text-black dark:text-gray-200 font-light">
+                {" "}
+                SQL, MongoDB
+              </span>
             </li>
             <li className="md:text-lg">
-              <span className="font-normal text-black dark:text-white">Extras</span>
+              <span className="font-bold text-black dark:text-white">
+                Extras
+              </span>
               :
-              <ul className="pl-4 my-4 flex flex-col gap-2 text-base list-disc">
+              <ul className="pl-4 flex flex-col gap-2 text-base list-disc">
                 <li>
                   Design tools:{" "}
                   <span className="text-black dark:text-gray-200 font-light">
